@@ -759,7 +759,21 @@ use Dancer::Test;
 route_exists [GET => '/'], 'a route handler is defined for /';
 response_status_is ['GET' => '/'], 200, 'response status is 200 for /';
 ",
-
+            'MANIFEST.SKIP' =>
+'^\.git\/
+maint
+^tags$
+.last_cover_stats
+Makefile$
+^blib
+^pm_to_blib
+^.*.bak
+^.*.old
+^t.*sessions
+^cover_db
+^.*\.log
+^.*\.swp$
+',
     };
 }
 
