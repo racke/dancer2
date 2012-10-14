@@ -2,7 +2,7 @@ package Dancer::Script;
 
 use strict;
 use warnings;
-use base 'Dancer::Object';
+use Moo;
 use FindBin '$RealBin';
 use Dancer ':syntax';
 use Dancer::ModuleLoader;
@@ -18,9 +18,44 @@ use constant FILE => 1;
 set logger        => 'console';
 set logger_format => '%L> %m';
 
-Dancer::Script->attributes(
-    qw(appname root_path check_version dancer_app_dir dancer_script
-      dancer_version do_check_dancer_version do_overwrite_all lib_file lib_path)
+has appname => (
+    is => 'rw',
+);
+
+has root_path => (
+    is => 'rw',
+);
+
+has check_version => (
+    is => 'rw',
+);
+
+has dancer_app_dir => (
+    is => 'rw',
+);
+
+has dancer_script => (
+    is => 'rw',
+);
+
+has dancer_version => (
+    is => 'rw',
+);
+
+has do_check_dancer_version => (
+    is => 'rw',
+);
+
+has do_overwrite_all => (
+    is => 'rw',
+);
+
+has lib_file => (
+    is => 'rw',
+);
+
+has lib_path => (
+    is => 'rw',
 );
 
 #  Here goes the code to use File::ShareDir 
