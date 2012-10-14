@@ -1,0 +1,93 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use Dancer::Script;
+
+Dancer::Script->init->run;
+
+__END__
+=pod
+
+=head1 NAME
+
+dancer - helper script to create new Dancer applications
+
+=head1 SYNOPSIS
+
+dancer [options] -a <appname>
+
+=head1 OPTIONS
+
+    -h, --help            : print what you are currently reading
+    -a, --application     : the name of your application
+    -p, --path            : the path where to create your application
+                              (current directory if not specified)
+    -x, --no-check        : don't check for the latest version of Dancer
+                              (checking version implies internet connection)
+    -v, --version         : print the version of dancer being used
+
+=head1 DESCRIPTION
+
+Helper script for providing a bootstrapping method to quickly and easily create
+the framework for a new Dancer application.
+
+=head1 EXAMPLE
+
+Here is an application created with dancer:
+
+    $ dancer -a My::WebApp
+    + My-WebApp
+    + My-WebApp/bin
+    + My-WebApp/bin/app.pl
+    + My-WebApp/config.yml
+    + My-WebApp/environments
+    + My-WebApp/environments/development.yml
+    + My-WebApp/environments/production.yml
+    + My-WebApp/views
+    + My-WebApp/views/index.tt
+    + My-WebApp/views/layouts
+    + My-WebApp/views/layouts/main.tt
+    + My-WebApp/lib
+    + My-WebApp/lib/My
+    + My-WebApp/lib/My/WebApp.pm
+    + My-WebApp/public
+    + My-WebApp/public/css
+    + My-WebApp/public/css/style.css
+    + My-WebApp/public/css/error.css
+    + My-WebApp/public/images
+    + My-WebApp/public/500.html
+    + My-WebApp/public/404.html
+    + My-WebApp/public/dispatch.fcgi
+    + My-WebApp/public/dispatch.cgi
+    + My-WebApp/public/javascripts
+    + My-WebApp/public/javascripts/jquery.js
+    + My-WebApp/Makefile.PL
+    + My-WebApp/t
+    + My-WebApp/t/002_index_route.t
+    + My-WebApp/t/001_base.t
+
+The application is ready to serve:
+
+    $ cd My-WebApp
+    $ ./bin/app.pl
+    >> Listening on 127.0.0.1:3000
+    == Entering the development dance floor ...
+
+=head1 AUTHOR
+
+This script has been written by Sebastien Deseille
+<sebastien.deseille@gmail.com> and Alexis Sukrieh
+<sukria@cpan.org>.
+
+=head1 SOURCE CODE
+
+See L<Dancer> for more information.
+
+=head1 LICENSE
+
+This module is free software and is published under the same
+terms as Perl itself.
+
+=cut
