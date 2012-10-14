@@ -5,7 +5,7 @@ use warnings;
 use Moo;
 use FindBin '$RealBin';
 use Dancer ':syntax';
-use Dancer::Template::Simple;
+use Dancer::Template::Tiny;
 use Dancer::Renderer;
 use File::Basename 'basename';
 use File::Path 'mkpath';
@@ -353,7 +353,7 @@ sub _process_template {
     my $self     = shift;
     my $template = shift;
     my $tokens   = shift;
-    my $engine   = Dancer::Template::Simple->new;
+    my $engine   = Dancer::Template::Tiny->new;
     $engine->{start_tag} = '[%';
     $engine->{stop_tag}  = '%]';
     return $engine->render(\$template, $tokens);
