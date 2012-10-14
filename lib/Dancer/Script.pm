@@ -727,10 +727,10 @@ layout: \"main\"
 charset: \"UTF-8\"
 
 # template engine
-# simple: default and very basic template engine
+# tiny: default and very basic template engine
 # template_toolkit: TT
 
-template: \"simple\"
+template: \"tiny\"
 
 # template: \"template_toolkit\"
 # engines:
