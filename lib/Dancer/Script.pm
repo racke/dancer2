@@ -6,7 +6,6 @@ use Moo;
 use FindBin '$RealBin';
 use Dancer ':syntax';
 use Dancer::Template::Tiny;
-use Dancer::Renderer;
 use File::Basename 'basename';
 use File::Path 'mkpath';
 use File::Spec::Functions qw/catdir catfile/;
