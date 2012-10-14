@@ -5,7 +5,6 @@ use warnings;
 use Moo;
 use FindBin '$RealBin';
 use Dancer ':syntax';
-use Dancer::ModuleLoader;
 use Dancer::Template::Simple;
 use Dancer::Renderer;
 use File::Basename 'basename';
@@ -120,23 +119,6 @@ sub _parse_opts {
     pod2usage(-verbose => 1) if not defined $name;
     pod2usage(-verbose => 1) unless -d $path && -w $path;
     sub version { print 'Dancer ' . $Dancer::VERSION . "\n"; exit 0; }
-
-    unless (Dancer::ModuleLoader->load('YAML')) {
-        print <<NOYAML;
-*****
-WARNING: YAML.pm is not installed.  This is not a full dependency, but is highly
-recommended; in particular, the scaffolded Dancer app being created will not be
-able to read settings from the config file without YAML.pm being installed.
-
-To resolve this, simply install YAML from CPAN, for instance using one of the
-following commands:
-
-  cpan YAML
-  perl -MCPAN -e 'install YAML'
-  curl -L http://cpanmin.us | perl - --sudo YAML
-*****
-NOYAML
-    }
 
     return ($name, $path, $do_check_dancer_version);
 }
