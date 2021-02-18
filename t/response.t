@@ -30,7 +30,7 @@ $r->content_type('text/plain');
 is $r->content_type, 'text/plain';
 
 ok( !$r->is_forwarded );
-$r->forward('http://perldancer.org');
+$r->forward('https://perldancer.org');
 ok( $r->is_forwarded );
 
 is $r->header('X-Foo'), undef;

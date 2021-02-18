@@ -131,7 +131,7 @@ sub default_error_page {
 [% content %]
 </div>
 <div id="footer">
-Powered by <a href="http://perldancer.org/">Dancer2</a> [% version %]
+Powered by <a href="https://perldancer.org/">Dancer2</a> [% version %]
 </div>
 </body>
 </html>

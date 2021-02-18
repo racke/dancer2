@@ -1394,7 +1394,7 @@ Enjoy!
 
 =item *
 
-L<http://perldancer.org>
+L<https://perldancer.org>
 
 =item *
 

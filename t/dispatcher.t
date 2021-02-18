@@ -75,7 +75,7 @@ $app->add_hook(
             my $app = shift;
             $route_from_request = $app->request->route;
             if ( $app->request->path_info eq '/haltme' ) {
-                $app->response->header( Location => 'http://perldancer.org' );
+                $app->response->header( Location => 'https://perldancer.org' );
                 $app->response->status(302);
                 $app->response->is_halted(1);
             }
@@ -151,7 +151,7 @@ my @tests = (
         },
         expected => [
             302,
-            [   'Location'       => 'http://perldancer.org',
+            [   'Location'       => 'https://perldancer.org',
                 'Content-Length' => '305',
                 'Content-Type'   => 'text/html; charset=utf-8',
                 'Server'         => "Perl Dancer2 " . Dancer2->VERSION,
