@@ -152,7 +152,7 @@ my @tests = (
         expected => [
             302,
             [   'Location'       => 'https://perldancer.org',
-                'Content-Length' => '305',
+                'Content-Length' => '306',
                 'Content-Type'   => 'text/html; charset=utf-8',
                 'Server'         => "Perl Dancer2 " . Dancer2->VERSION,
             ],
