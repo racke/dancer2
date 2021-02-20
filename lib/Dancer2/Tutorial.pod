@@ -1398,7 +1398,7 @@ L<https://perldancer.org>
 
 =item *
 
-L<http://github.com/PerlDancer/Dancer2>
+L<https://github.com/PerlDancer/Dancer2>
 
 =item *
 

@@ -59,12 +59,12 @@ A good way to help the project is to find a failing build log on the
 [CPAN testers](http://www.cpantesters.org/distro/D/Dancer2.html).
 
 If you find a failing test report, feel free to report it as a
-[GitHub issue](http://github.com/PerlDancer/Dancer2/issues).
+[GitHub issue](https://github.com/PerlDancer/Dancer2/issues).
 
 ### Reporting Bugs
 
 We prefer to have all our bug reports on GitHub, in the
-[issues section](http://github.com/PerlDancer/Dancer2/issues).
+[issues section](https://github.com/PerlDancer/Dancer2/issues).
 
 Please make sure the bug you're reporting does not yet exist. If in doubt
 please ask on IRC.
@@ -196,7 +196,7 @@ _master_ branch.
 
 Here is the workflow for submitting a patch:
 
-1. Fork the repository: http://github.com/PerlDancer/Dancer2 and click "Fork";
+1. Fork the repository: https://github.com/PerlDancer/Dancer2 and click "Fork";
 
 2. Clone your fork to have a local copy using the following command:
 
