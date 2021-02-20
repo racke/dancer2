@@ -45,8 +45,8 @@ add the following lines:
     use FindBin;
     use lib "$FindBin::Bin/../lib";
 
-There is a L<Dancer Advent Calendar|http://advent.perldancer.org> article
-L<< covering the C<to_app> keyword|http://advent.perldancer.org/2014/9 >>
+There is a L<Dancer Advent Calendar|https://advent.perldancer.org> article
+L<< covering the C<to_app> keyword|https://advent.perldancer.org/2014/9 >>
 and its usage.
 
 =head2 Configuration

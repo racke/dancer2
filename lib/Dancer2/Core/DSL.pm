@@ -528,6 +528,6 @@ alias for L<setting>:
 
 =head1 SEE ALSO
 
-L<http://advent.perldancer.org/2010/18>
+L<https://advent.perldancer.org/2010/18>
 
 =cut
