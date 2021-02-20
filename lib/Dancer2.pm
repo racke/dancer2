@@ -207,7 +207,7 @@ extremely seriously, and will be addressed in the earliest timeframe possible.
 
 You are welcome to join our mailing list.
 For subscription information, mail address and archives see
-L<http://lists.preshweb.co.uk/mailman/listinfo/dancer-users>.
+L<https://lists.preshweb.co.uk/mailman/listinfo/dancer-users>.
 
 We are also on IRC: #dancer on irc.perl.org.
 
